@@ -76,3 +76,5 @@ maximum = Math.max(x, y, z);
 console.log("The maximum of x, y and z is: ", maximum);
 
 // --------- To be Continued ---------
+// 36:54 reached
+// TODO: rewatch and practice 
