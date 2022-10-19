@@ -52,14 +52,27 @@
 // console.log("Happy BDAY! You are ", age, "years old!");
 
 // --------- Constants # 6 ---------
-const PI = 3.14159;
-let radius;
-let circumference;
+// const PI = 3.14159;
+// let radius;
+// let circumference;
 
-radius = window.prompt("Enter the radius of a circle");
-radius = Number(radius);
+// radius = window.prompt("Enter the radius of a circle");
+// radius = Number(radius);
 
-circumference = 2 * PI * radius;
-console.log("The circumference is: ", circumference);
+// circumference = 2 * PI * radius;
+// console.log("The circumference is: ", circumference);
 
+// --------- Math # 7 ---------
+let x = 3.52242;
+let y = 5;
+let z = 12;
 
+let maximum;
+let mininin;
+
+mininin = Math.min(x, y, z);
+console.log("The minimum of x, y and z is: ", mininin);
+maximum = Math.max(x, y, z);
+console.log("The maximum of x, y and z is: ", maximum);
+
+// --------- To be Continued ---------
