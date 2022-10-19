@@ -21,5 +21,27 @@
 // document.getElementById("p3").innerHTML = "Enroled: " + student;
 
 // --------- arithmetic operations # 3 ---------
+/*      operator precendece in js
+        1. parenthesis ()
+        2. exponents [number^number] [2^4]
+        3. multiplicaiton & division
+        4. addition & subraction
+*/
+// let studets = 20;
+// let extraStudents = studets % 3;
+// console.log("Extra students are: ", extraStudents);
+
+// --------- user input # 4 --------- 
+//let userName = window.prompt("What's your name?");
+//console.log("Your name is: ", userName);
+// let userName;
+
+// document.getElementById("myButton").onclick = function(){
+
+//     userName = document.getElementById("myText").ariaValueMax;
+//     console.log(userName);
+//     document.getElementById("myLabel").innerHTML = "Hello" + userName;
+// }
+
 
 
