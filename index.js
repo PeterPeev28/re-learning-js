@@ -44,9 +44,22 @@
 // }
 
 // --------- type conversion # 5 --------- 
-let age = window.prompt("How old are you?");
-console.log(typeof age);
-age = Number(age);
-console.log(typeof age);
-age += 1;
-console.log("Happy BDAY! You are ", age, "years old!");
+// let age = window.prompt("How old are you?");
+// console.log(typeof age);
+// age = Number(age);
+// console.log(typeof age);
+// age += 1;
+// console.log("Happy BDAY! You are ", age, "years old!");
+
+// --------- Constants # 6 ---------
+const PI = 3.14159;
+let radius;
+let circumference;
+
+radius = window.prompt("Enter the radius of a circle");
+radius = Number(radius);
+
+circumference = 2 * PI * radius;
+console.log("The circumference is: ", circumference);
+
+
