@@ -43,5 +43,10 @@
 //     document.getElementById("myLabel").innerHTML = "Hello" + userName;
 // }
 
-
-
+// --------- type conversion # 5 --------- 
+let age = window.prompt("How old are you?");
+console.log(typeof age);
+age = Number(age);
+console.log(typeof age);
+age += 1;
+console.log("Happy BDAY! You are ", age, "years old!");
