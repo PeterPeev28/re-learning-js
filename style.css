@@ -1,0 +1,21 @@
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 42px;
+}
+
+#decreseButton{
+    padding: 10px;
+    margin-left: 475px;
+    font-size: 15px;
+}
+
+#resetButton{
+    padding: 10px;
+    font-size: 15px;
+}
+
+#increaseButton{
+    padding: 10px;
+    font-size: 15px;
+}

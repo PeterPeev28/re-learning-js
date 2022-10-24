@@ -75,30 +75,26 @@
 // maximum = Math.max(x, y, z);
 // console.log("The maximum of x, y and z is: ", maximum);
 
-// --------- Exercise 1 - Hypothenuse ---------
+// --------- Exercise 1 - Hypothenuse #8 ---------
+// let a;
+// let b;
+// let c;
 
-let a;
-let b;
-let c;
+// a = Number(a);
+// b = Number(b);
 
-//a = window.prompt("Enter side A");
-a = Number(a);
+// document.getElementById("calculateHypotenuse").onclick=function(){
 
-//b = window.prompt("Enter side B");
-b = Number(b);
+//         a = document.getElementById("aTextBox").value;
+//         a = Number(a);
+//         b = document.getElementById("bTextBox").value;
+//         b = Number(b);
 
-document.getElementById("calculateHypotenuse").onclick=function(){
+//         c = Math.sqrt(Math.pow(a, 2) + Math.pow(b,2));
+//         document.getElementById("cLabel").innerHTML = "Side C: "+ c;
+// }
 
-        a = document.getElementById("aTextBox").value;
-        a = Number(a);
-
-        b = document.getElementById("bTextBox").value;
-        b = Number(b);
-
-        c = Math.sqrt(Math.pow(a, 2) + Math.pow(b,2));
-        document.getElementById("cLabel").innerHTML = "Side C: "+ c;
-
-}
+let counter = 0;
 
 // --------- To be Continued ---------
 // 43:13 reached
