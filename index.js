@@ -63,29 +63,45 @@
 // console.log("The circumference is: ", circumference);
 
 // --------- Math # 7 ---------
-let x = 3.52242;
-let y = 5;
-let z = 12;
+// let x = 3.52242;
+// let y = 5;
+// let z = 12;
 
-let maximum;
-let mininin;
+// let maximum;
+// let mininin;
 
-mininin = Math.min(x, y, z);
-console.log("The minimum of x, y and z is: ", mininin);
-maximum = Math.max(x, y, z);
-console.log("The maximum of x, y and z is: ", maximum);
+// mininin = Math.min(x, y, z);
+// console.log("The minimum of x, y and z is: ", mininin);
+// maximum = Math.max(x, y, z);
+// console.log("The maximum of x, y and z is: ", maximum);
+
+// --------- Exercise 1 - Hypothenuse ---------
+
+let a;
+let b;
+let c;
+
+//a = window.prompt("Enter side A");
+a = Number(a);
+
+//b = window.prompt("Enter side B");
+b = Number(b);
+
+document.getElementById("calculateHypotenuse").onclick=function(){
+
+        a = document.getElementById("aTextBox").value;
+        a = Number(a);
+
+        b = document.getElementById("bTextBox").value;
+        b = Number(b);
+
+        c = Math.sqrt(Math.pow(a, 2) + Math.pow(b,2));
+        document.getElementById("cLabel").innerHTML = "Side C: "+ c;
+
+}
 
 // --------- To be Continued ---------
-// 36:54 reached
+// 43:13 reached
 // TODO: rewatch and practice 
 
-// REDOING THE JS COURSE BY BRO-CODE AGAIN
-
-let userName;
-document.getElementById("myButton").onclick = function(){
-
-        userName = document.getElementById("myText").value;
-        console.log("Hello", userName, ". Enjoy your stay :)");
-        document.getElementById("myLabel").innerHTML = "Hello"+ userName;
-}
 
