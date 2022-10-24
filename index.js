@@ -94,7 +94,26 @@
 //         document.getElementById("cLabel").innerHTML = "Side C: "+ c;
 // }
 
+// --------- Exercise 2 - Simple counter program #9 ---------
 let counter = 0;
+
+// When the decrease button is clicked, execute a function which
+// decreases the counter by -1 and then the result is set on the
+// counter label via the innerHTML method.
+document.getElementById("decreaseButton").onclick = function(){
+        counter -= 1;
+        document.getElementById("countLabel").innerHTML = counter;
+}
+
+document.getElementById("resetButton").onclick = function(){
+        counter = 0;
+        document.getElementById("countLabel").innerHTML = counter;
+}
+
+document.getElementById("increaseButton").onclick = function(){
+        counter += 1;
+        document.getElementById("countLabel").innerHTML = counter;
+}
 
 // --------- To be Continued ---------
 // 43:13 reached
