@@ -78,3 +78,14 @@ console.log("The maximum of x, y and z is: ", maximum);
 // --------- To be Continued ---------
 // 36:54 reached
 // TODO: rewatch and practice 
+
+// REDOING THE JS COURSE BY BRO-CODE AGAIN
+
+let userName;
+document.getElementById("myButton").onclick = function(){
+
+        userName = document.getElementById("myText").value;
+        console.log("Hello", userName, ". Enjoy your stay :)");
+        document.getElementById("myLabel").innerHTML = "Hello"+ userName;
+}
+
