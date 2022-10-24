@@ -1,3 +1,4 @@
+/* Counter exercise */
 #countLabel{
     display: block;
     text-align: center;
@@ -18,4 +19,26 @@
 #increaseButton{
     padding: 10px;
     font-size: 15px;
+}
+
+/* Random number generator exersice */
+#xLabel{
+    padding: 30px;
+    font-size: 15px;
+}
+
+#yLabel{
+    padding: 30px;
+    font-size: 15px;
+}
+
+#zLabel{
+    padding: 30px;
+    font-size: 15px;
+}
+
+#rollButton{
+    padding: 10px;
+    margin-left: 15px;
+    font-size: 10px;
 }
