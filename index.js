@@ -249,23 +249,31 @@
 // }
 
 // --------- template literals #28 ---------
-let userName = "Peter";
-let items = 3;
-let total = 75;
-// console.log("Hello", userName);
-// console.log("You have ", items, "items in your cart");
-// console.log("Your total is $", total);
+// let userName = "Peter";
+// let items = 3;
+// let total = 75;
+// // Solution 1
+// // console.log("Hello", userName);
+// // console.log("You have ", items, "items in your cart");
+// // console.log("Your total is $", total);
+// // Solution 2
+// // console.log(`Hello ${userName}`);
+// // console.log(`You have ${items}`);
+// // console.log(`Your total is $${total}`);
+// // Solution 3
+// let text = `Hello ${userName}
+//   You have ${items} items
+//   Your total is $${total}`;
+// console.log(text);
 
-// console.log(`Hello ${userName}`);
-// console.log(`You have ${items}`);
-// console.log(`Your total is $${total}`);
-let text = `Hello ${userName}
-  You have ${items} items
-  Your total is $${total}`;
-console.log(text);
-
-
-
+// --------- format currency #29 ---------
+let myNum = 12345.3377;
+//myNum = myNum.toLocaleString("bg-BG");
+myNum = myNum.toLocaleString("en-US", {style: "currency", currency: "USD"});
+console.log(myNum);
+ let myNumBG = 222333.12345;
+ myNumBG = myNumBG.toLocaleString(undefined, {style: "currency", currency: "BGN"});
+console.log(myNumBG);
 
 // --------- To be Continued ---------
 // 43:13 reached
