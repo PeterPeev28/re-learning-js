@@ -116,19 +116,21 @@
 // }
 
 // --------- Exercise 3 - Random number generator #10 ---------
-let x;
-let y;
-let z;
-document.getElementById("rollButton").onclick = function(){
+// let x;
+// let y;
+// let z;
+// document.getElementById("rollButton").onclick = function(){
         
-         x = Math.floor(Math.random() * 6) + 1;
-        document.getElementById("xLabel").innerHTML = "X: " + x;
-         y = Math.floor(Math.random() * 6) + 1;
-        document.getElementById("yLabel").innerHTML = "Y: " + y;
-         z = Math.floor(Math.random() * 6) + 1;
-        document.getElementById("zLabel").innerHTML = "Z: " + z;
+//          x = Math.floor(Math.random() * 6) + 1;
+//         document.getElementById("xLabel").innerHTML = "X: " + x;
+//          y = Math.floor(Math.random() * 6) + 1;
+//         document.getElementById("yLabel").innerHTML = "Y: " + y;
+//          z = Math.floor(Math.random() * 6) + 1;
+//         document.getElementById("zLabel").innerHTML = "Z: " + z;
 
-}
+// }
+
+// --------- Usefull string methods #11 ---------
 
 
 
