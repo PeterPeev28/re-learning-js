@@ -200,15 +200,33 @@
 // }
 
 // --------- nested for loop #23 ---------
-let rows = window.prompt("Enter number of rows:");
-let colums = window.prompt("Enter numbe rof colums");
-let symbol = window.prompt("Enter a symbol to use: ");
-for(let i = 0; i < rows; i++){
-       for(let j = 0; j < colums; j++){
-        document.getElementById("myRectangle").innerHTML += symbol;
-        }
-        document.getElementById("myRectangle").innerHTML += "<br>";
+// let rows = window.prompt("Enter number of rows:");
+// let colums = window.prompt("Enter numbe rof colums");
+// let symbol = window.prompt("Enter a symbol to use: ");
+// for(let i = 0; i < rows; i++){
+//        for(let j = 0; j < colums; j++){
+//         document.getElementById("myRectangle").innerHTML += symbol;
+//         }
+//         document.getElementById("myRectangle").innerHTML += "<br>";
+// }
+
+// --------- functions #24 ---------
+startProgram();
+function startProgram(){
+        let userName = "Peter";
+        let age = 24;
+        happyBirthday(userName, age);
 }
+
+function happyBirthday(userName, age){
+        console.log("Happy birtday to you!");
+        console.log("Happy birtday to you!");
+        console.log("Happy birtday dear ", userName);
+        console.log("Happy birtday to you!");
+        console.log("You are ", age, " years old!");
+}
+
+// --------- functions #24 ---------
 
 // --------- To be Continued ---------
 // 43:13 reached
