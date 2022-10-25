@@ -227,18 +227,25 @@
 // }
 
 // --------- return statement #25 ---------
-let area;
-let width;
-let height;
+// let area;
+// let width;
+// let height;
 
-width =  window.prompt("Enter width");
-height = window.prompt("Enter heinght");
-area = getArea(width, height);
-console.log("The are is:", area);
+// width =  window.prompt("Enter width");
+// height = window.prompt("Enter heinght");
+// area = getArea(width, height);
+// console.log("The are is:", area);
 
-function getArea(width, height){
-        let result = width * height;
-        return result;
+// function getArea(width, height){
+//         return width * height;
+// }
+
+// --------- ternary operator #26 ---------
+let adult = checkAge(21);
+console.log(adult)
+
+function checkAge(age){
+        return age >= 18 ? true : false;
 }
 
 // --------- To be Continued ---------
