@@ -188,10 +188,15 @@
 // }
 
 // --------- while loop #19 ---------
-let counter = 0;
-while(counter<10){
-        console.log("Counter is at: ", counter);
-        counter++;
+// let counter = 0;
+// while(counter<10){
+//         console.log("Counter is at: ", counter);
+//         counter++;
+// }
+
+// --------- for loop #21 ---------
+for(let i = 0; i < 10; i++){
+        console.log("Counter is at: ", i);
 }
 
 // --------- To be Continued ---------
