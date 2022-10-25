@@ -211,22 +211,35 @@
 // }
 
 // --------- functions #24 ---------
-startProgram();
-function startProgram(){
-        let userName = "Peter";
-        let age = 24;
-        happyBirthday(userName, age);
-}
+// startProgram();
+// function startProgram(){
+//         let userName = "Peter";
+//         let age = 24;
+//         happyBirthday(userName, age);
+// }
 
-function happyBirthday(userName, age){
-        console.log("Happy birtday to you!");
-        console.log("Happy birtday to you!");
-        console.log("Happy birtday dear ", userName);
-        console.log("Happy birtday to you!");
-        console.log("You are ", age, " years old!");
-}
+// function happyBirthday(userName, age){
+//         console.log("Happy birtday to you!");
+//         console.log("Happy birtday to you!");
+//         console.log("Happy birtday dear ", userName);
+//         console.log("Happy birtday to you!");
+//         console.log("You are ", age, " years old!");
+// }
 
-// --------- functions #24 ---------
+// --------- return statement #25 ---------
+let area;
+let width;
+let height;
+
+width =  window.prompt("Enter width");
+height = window.prompt("Enter heinght");
+area = getArea(width, height);
+console.log("The are is:", area);
+
+function getArea(width, height){
+        let result = width * height;
+        return result;
+}
 
 // --------- To be Continued ---------
 // 43:13 reached
