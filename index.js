@@ -141,29 +141,51 @@
 // console.log("The last occurence of 'e' is: ", userName.lastIndexOf("e"));
 
 // --------- checked property #15 ---------
-document.getElementById("myButton").onclick = function(){
-        const myCheckBox = document.getElementById("myCheckBox"); 
-        const visaBtn = document.getElementById("visaBtn");
-        const mastercardBtn = document.getElementById("mastercardBtn");
-        const paypalBtn = document.getElementById("paypalBtn");
+// document.getElementById("myButton").onclick = function(){
+//         const myCheckBox = document.getElementById("myCheckBox"); 
+//         const visaBtn = document.getElementById("visaBtn");
+//         const mastercardBtn = document.getElementById("mastercardBtn");
+//         const paypalBtn = document.getElementById("paypalBtn");
 
-        if (myCheckBox.checked) {
-        console.log("You are subscribed!");                
-        } else {
-        console.log("You are NOT subscribed");
-        }
+//         if (myCheckBox.checked) {
+//         console.log("You are subscribed!");                
+//         } else {
+//         console.log("You are NOT subscribed");
+//         }
 
-        if (visaBtn.checked) {
-                console.log("You are paying with Visa");
-        } else if(mastercardBtn.checked){
-                console.log("You are paying with MasterCard.");
-        } else if(paypalBtn.checked){
-                console.log("You are paying with PayPal.");
-        } else {
-                console.log("You must select a payment type!");
-        }
+//         if (visaBtn.checked) {
+//                 console.log("You are paying with Visa");
+//         } else if(mastercardBtn.checked){
+//                 console.log("You are paying with MasterCard.");
+//         } else if(paypalBtn.checked){
+//                 console.log("You are paying with PayPal.");
+//         } else {
+//                 console.log("You must select a payment type!");
+//         }
+// }
+
+// --------- switch #16 ---------
+let grade = 6;
+
+switch(grade){
+        case 6:
+                console.log("Excellent");
+                break;
+        case 5:
+                console.log("Good");
+                break;
+        case grade == 4:
+                console.log("Not bad");
+                break;
+        case grade == 3:
+                console.log("Barely passed");
+                break;
+        case grade == 2:
+                console.log("Failed");
+                break;
+        default:
+                console.log(grade, " is not a grade.");
 }
-
 
 
 // --------- To be Continued ---------
