@@ -131,16 +131,39 @@
 // }
 
 // --------- Usefull string methods #11 ---------
-let userName = "Peter Peev";
-let nameLength = userName.length;
-console.log("The length of the username is: ", nameLength);
-let firstLetter = userName.charAt(0);
-console.log("The first letter of the username is: ", firstLetter);
-indexLetter = userName.indexOf("r");
-console.log("The letter you are looking for is at index: ", indexLetter);
-console.log("The last occurence of 'e' is: ", userName.lastIndexOf("e"));
+// let userName = "Peter Peev";
+// let nameLength = userName.length;
+// console.log("The length of the username is: ", nameLength);
+// let firstLetter = userName.charAt(0);
+// console.log("The first letter of the username is: ", firstLetter);
+// indexLetter = userName.indexOf("r");
+// console.log("The letter you are looking for is at index: ", indexLetter);
+// console.log("The last occurence of 'e' is: ", userName.lastIndexOf("e"));
 
-// --------- String slicing #12 ---------
+// --------- checked property #15 ---------
+document.getElementById("myButton").onclick = function(){
+        const myCheckBox = document.getElementById("myCheckBox"); 
+        const visaBtn = document.getElementById("visaBtn");
+        const mastercardBtn = document.getElementById("mastercardBtn");
+        const paypalBtn = document.getElementById("paypalBtn");
+
+        if (myCheckBox.checked) {
+        console.log("You are subscribed!");                
+        } else {
+        console.log("You are NOT subscribed");
+        }
+
+        if (visaBtn.checked) {
+                console.log("You are paying with Visa");
+        } else if(mastercardBtn.checked){
+                console.log("You are paying with MasterCard.");
+        } else if(paypalBtn.checked){
+                console.log("You are paying with PayPal.");
+        } else {
+                console.log("You must select a payment type!");
+        }
+}
+
 
 
 // --------- To be Continued ---------
