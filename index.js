@@ -165,28 +165,34 @@
 // }
 
 // --------- switch #16 ---------
-let grade = 6;
+// let grade = 6;
 
-switch(grade){
-        case 6:
-                console.log("Excellent");
-                break;
-        case 5:
-                console.log("Good");
-                break;
-        case grade == 4:
-                console.log("Not bad");
-                break;
-        case grade == 3:
-                console.log("Barely passed");
-                break;
-        case grade == 2:
-                console.log("Failed");
-                break;
-        default:
-                console.log(grade, " is not a grade.");
+// switch(grade){
+//         case 6:
+//                 console.log("Excellent");
+//                 break;
+//         case 5:
+//                 console.log("Good");
+//                 break;
+//         case 4:
+//                 console.log("Not bad");
+//                 break;
+//         case 3:
+//                 console.log("Barely passed");
+//                 break;
+//         case 2:
+//                 console.log("Failed");
+//                 break;
+//         default:
+//                 console.log(grade, " is not a grade.");
+// }
+
+// --------- while loop #19 ---------
+let counter = 0;
+while(counter<10){
+        console.log("Counter is at: ", counter);
+        counter++;
 }
-
 
 // --------- To be Continued ---------
 // 43:13 reached
