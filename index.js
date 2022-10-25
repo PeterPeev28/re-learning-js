@@ -276,7 +276,7 @@ console.log(myNum);
 console.log(myNumBG);
 
 // --------- To be Continued ---------
-// 43:13 reached
+// 2:03:00 reached
 // TODO: rewatch and practice 
 
 
