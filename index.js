@@ -131,7 +131,16 @@
 // }
 
 // --------- Usefull string methods #11 ---------
+let userName = "Peter Peev";
+let nameLength = userName.length;
+console.log("The length of the username is: ", nameLength);
+let firstLetter = userName.charAt(0);
+console.log("The first letter of the username is: ", firstLetter);
+indexLetter = userName.indexOf("r");
+console.log("The letter you are looking for is at index: ", indexLetter);
+console.log("The last occurence of 'e' is: ", userName.lastIndexOf("e"));
 
+// --------- String slicing #12 ---------
 
 
 // --------- To be Continued ---------
