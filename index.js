@@ -195,8 +195,19 @@
 // }
 
 // --------- for loop #21 ---------
-for(let i = 0; i < 10; i++){
-        console.log("Counter is at: ", i);
+// for(let i = 0; i < 10; i++){
+//         console.log("Counter is at: ", i);
+// }
+
+// --------- nested for loop #23 ---------
+let rows = window.prompt("Enter number of rows:");
+let colums = window.prompt("Enter numbe rof colums");
+let symbol = window.prompt("Enter a symbol to use: ");
+for(let i = 0; i < rows; i++){
+       for(let j = 0; j < colums; j++){
+        document.getElementById("myRectangle").innerHTML += symbol;
+        }
+        document.getElementById("myRectangle").innerHTML += "<br>";
 }
 
 // --------- To be Continued ---------
