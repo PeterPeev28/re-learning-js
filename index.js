@@ -241,12 +241,31 @@
 // }
 
 // --------- ternary operator #26 ---------
-let adult = checkAge(21);
-console.log(adult)
+// let adult = checkAge(21);
+// console.log(adult)
 
-function checkAge(age){
-        return age >= 18 ? true : false;
-}
+// function checkAge(age){
+//         return age >= 18 ? true : false;
+// }
+
+// --------- template literals #28 ---------
+let userName = "Peter";
+let items = 3;
+let total = 75;
+// console.log("Hello", userName);
+// console.log("You have ", items, "items in your cart");
+// console.log("Your total is $", total);
+
+// console.log(`Hello ${userName}`);
+// console.log(`You have ${items}`);
+// console.log(`Your total is $${total}`);
+let text = `Hello ${userName}
+  You have ${items} items
+  Your total is $${total}`;
+console.log(text);
+
+
+
 
 // --------- To be Continued ---------
 // 43:13 reached
