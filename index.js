@@ -252,14 +252,17 @@
 // let userName = "Peter";
 // let items = 3;
 // let total = 75;
+
 // // Solution 1
 // // console.log("Hello", userName);
 // // console.log("You have ", items, "items in your cart");
 // // console.log("Your total is $", total);
+
 // // Solution 2
 // // console.log(`Hello ${userName}`);
 // // console.log(`You have ${items}`);
 // // console.log(`Your total is $${total}`);
+
 // // Solution 3
 // let text = `Hello ${userName}
 //   You have ${items} items
@@ -267,13 +270,33 @@
 // console.log(text);
 
 // --------- format currency #29 ---------
-let myNum = 12345.3377;
-//myNum = myNum.toLocaleString("bg-BG");
-myNum = myNum.toLocaleString("en-US", {style: "currency", currency: "USD"});
-console.log(myNum);
- let myNumBG = 222333.12345;
- myNumBG = myNumBG.toLocaleString(undefined, {style: "currency", currency: "BGN"});
-console.log(myNumBG);
+// let myNum = 12345.3377;
+// //myNum = myNum.toLocaleString("bg-BG");
+// myNum = myNum.toLocaleString("en-US", {style: "currency", currency: "USD"});
+// console.log(myNum);
+//  let myNumBG = 222333.12345;
+//  myNumBG = myNumBG.toLocaleString(undefined, {style: "currency", currency: "BGN"});
+// console.log(myNumBG);
+
+// --------- number guessing game #30 ---------
+const answer = Math.floor(Math.random() * 10 + 1);
+let guesses = 0;
+
+document.getElementById("submitButton").onclick = function(){
+        let guess = document.getElementById("guessField").value;
+        guesses ++;
+       
+        if(guess == answer){
+                alert(`${answer} is the number. It took you ${guesses} guesses`);
+        } else if(guess < answer) {
+                alert("too small!");
+        } else {
+                alert("too large");
+        }
+}
+
+// --------- temperature conversion program  #31 ---------
+
 
 // --------- To be Continued ---------
 // 2:03:00 reached
