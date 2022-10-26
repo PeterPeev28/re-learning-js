@@ -296,36 +296,40 @@
 // }
 
 // --------- temperature conversion program  #31 ---------
-document.getElementById("submitButton").onclick = function(){
+// document.getElementById("submitButton").onclick = function(){
 
-        let temp;
+//         let temp;
 
-        if(document.getElementById("cButton").checked){
-                temp = document.getElementById("textBox").value;
-                temp = Number(temp);
-                temp = toCelsius(temp);
-                document.getElementById("tempLabel").innerHTML = temp + "C°";
-        }
-         else if(document.getElementById("fButton").checked){
-                temp = document.getElementById("textBox").value;
-                temp = Number(temp);
-                temp = toFahrenheit(temp);
-                document.getElementById("tempLabel").innerHTML = temp + "F°";
-        } 
-        else {
-                document.getElementById("tempLabel").innerHTML = "Select a unit";
-        }
+//         if(document.getElementById("cButton").checked){
+//                 temp = document.getElementById("textBox").value;
+//                 temp = Number(temp);
+//                 temp = toCelsius(temp);
+//                 document.getElementById("tempLabel").innerHTML = temp + "C°";
+//         }
+//          else if(document.getElementById("fButton").checked){
+//                 temp = document.getElementById("textBox").value;
+//                 temp = Number(temp);
+//                 temp = toFahrenheit(temp);
+//                 document.getElementById("tempLabel").innerHTML = temp + "F°";
+//         } 
+//         else {
+//                 document.getElementById("tempLabel").innerHTML = "Select a unit";
+//         }
 
-}
+// }
+// function toCelsius (temp){
+//         return (temp - 32) * (5/9);
+// }
 
+// function toFahrenheit(temp){
+//         return temp * 9 / 5 + 32;
+// }
 
-function toCelsius (temp){
-        return (temp - 32) * (5/9);
-}
+// --------- arrays  #32 ---------
+let fruits = ["apple", "orange", "banana"];
 
-function toFahrenheit(temp){
-        return temp * 9 / 5 + 32;
-}
+console.log(fruits);
+console.log(fruits[2]);
 
 // --------- To be Continued ---------
 // 2:03:00 reached
