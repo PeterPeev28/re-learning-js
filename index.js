@@ -326,13 +326,31 @@
 // }
 
 // --------- arrays  #32 ---------
-let fruits = ["apple", "orange", "banana"];
+// let fruits = ["apple", "orange", "banana"];
+// console.log(fruits);
+// console.log(fruits[2]);
 
-console.log(fruits);
-console.log(fruits[2]);
+// --------- loop through an array  #33 ---------
+
+let prices = [5, 10, 15, 20];
+
+for(let i = 0; i< prices.length; i++){
+        console.log(prices);
+        console.log(prices[i]);
+}
+
+for(let price in prices){
+        console.log(Number(price));
+        console.log(typeof(price));
+}
+
+// --------- loop through an array of strings  #34 ---------
+
+
 
 // --------- To be Continued ---------
-// 2:03:00 reached
+// 2:20:00 reached
 // TODO: rewatch and practice 
+
 
 
