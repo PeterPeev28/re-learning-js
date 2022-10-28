@@ -332,20 +332,39 @@
 
 // --------- loop through an array  #33 ---------
 
-let prices = [5, 10, 15, 20];
+// let prices = [5, 10, 15, 20];
 
-for(let i = 0; i< prices.length; i++){
-        console.log(prices);
-        console.log(prices[i]);
-}
+// for(let i = 0; i< prices.length; i++){
+//         console.log(prices);
+//         console.log(prices[i]);
+// }
 
-for(let price in prices){
-        console.log(Number(price));
-        console.log(typeof(price));
-}
+// for(let price in prices){
+//         console.log(Number(price));
+//         console.log(typeof(price));
+// }
 
 // --------- loop through an array of strings  #34 ---------
 
+// let fruits = ["banana", "apple", "orage", "coconut"];
+// fruits = fruits.sort().reverse();
+
+// for(let fruit of fruits){
+//         console.log(fruit);
+// }
+
+// --------- 2D array  #34 ---------
+let fruit = ["banana", "apple", "orage"];
+let vegetables = ["carrot", "onions", "potatoes"];
+let meats = ["eggs", "chicken", "fish"];
+
+let groceryList = [fruit, vegetables, meats];
+
+for(let list of groceryList){
+        for(let food of list){
+                console.log(food);
+        }
+}
 
 
 // --------- To be Continued ---------
