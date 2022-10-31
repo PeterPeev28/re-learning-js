@@ -353,18 +353,33 @@
 //         console.log(fruit);
 // }
 
-// --------- 2D array  #34 ---------
-let fruit = ["banana", "apple", "orage"];
-let vegetables = ["carrot", "onions", "potatoes"];
-let meats = ["eggs", "chicken", "fish"];
+// --------- 2D array  #35 ---------
+// let fruit = ["banana", "apple", "orage"];
+// let vegetables = ["carrot", "onions", "potatoes"];
+// let meats = ["eggs", "chicken", "fish"];
 
-let groceryList = [fruit, vegetables, meats];
+// let groceryList = [fruit, vegetables, meats];
 
-for(let list of groceryList){
-        for(let food of list){
-                console.log(food);
-        }
-}
+// for(let list of groceryList){
+//         for(let food of list){
+//                 console.log(food);
+//         }
+// }
+
+// --------- spread operator  #36 ---------
+let numbers =  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log("Array contains the following information: ", ...numbers);
+
+let maximum = Math.max(...numbers);
+console.log("The biggest number is:",maximum);
+
+let class1 = ["Bob", "Ron", "Peter"];
+let class2 = ["Angel", "Lancia", "Albert"];
+
+class1.push(...class2);
+console.log(class1);
+
+// --------- rest parameters  #37 ---------
 
 
 // --------- To be Continued ---------
