@@ -683,34 +683,81 @@
 // bird.fly();
 
 // --------- getter/setter #56 ---------
-class Car{
-        constructor(power){
-                this._gas = 25;
-                this._power = power;
-        }
+// class Car{
+//         constructor(power){
+//                 this._gas = 25;
+//                 this._power = power;
+//         }
 
-        get power(){
-                return `${this._power} hp`;
+//         get power(){
+//                 return `${this._power} hp`;
+//         }
+//         get gas(){
+//                 return `${this._gas} L (${this._gas / 50 * 100}%)`;
+//         }
+//         set gas(value){
+//                 if(value > 50){
+//                         value =  50;
+//                 }
+//                 else if(value < 0){
+//                         value = 0;
+//                 }
+//                 this._gas = value;
+//         }
+// }
+
+// let car = new Car(400);
+// console.log(car.power);
+// console.log(car.gas);
+// car.gas = 50;
+// console.log(car.gas);
+
+// --------- objects as arguments / array of objects #57 / #58 ---------
+class Car{
+        constructor(model, year, color){
+                this.model = model;
+                this.year = year;
+                this.color = color;
         }
-        get gas(){
-                return `${this._gas} L (${this._gas / 50 * 100}%)`;
+        drive(){
+                console.log(`You drive the ${this.model}`);
         }
-        set gas(value){
-                if(value > 50){
-                        value =  50;
-                }
-                else if(value < 0){
-                        value = 0;
-                }
-                this._gas = value;
+} // end of class
+
+const car1 = new Car("VW", 1987, "grey");
+const car2 = new Car("Mercedes", 1995, "black");
+const car3 = new Car("Lada", 1977, "red");
+const car4 = new Car("Audi", 2022, "purple");
+const cars = [car1, car2, car3, car4];
+
+console.log(cars[0]);
+// cars[0].drive();
+startRace(cars);
+
+function startRace(cars){
+        for (let car of cars){
+                car.drive();
         }
 }
 
-let car = new Car(400);
-console.log(car.power);
-console.log(car.gas);
-car.gas = 50;
-console.log(car.gas);
+// --------- anonymous objects #59 ---------
+
+
+// displayInfo(car1);
+// changeColor(car1, "white");
+// displayInfo(car1);
+
+// function displayInfo(car){
+//         console.log(car.model);
+//         console.log(car.year);
+//         console.log(car.color);
+// }
+
+// function changeColor(car, color){
+//         car.color = color;
+// }
+
+// --------- array of objects #58 ---------
 
 // --------- To be Continued ---------
 // 2:20:00 reached
