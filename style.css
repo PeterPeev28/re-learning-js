@@ -42,3 +42,16 @@
     margin-left: 15px;
     font-size: 10px;
 }
+
+/* Anonymous fuctions */
+#myLabel{
+    margin-left: 475px;
+    padding: 30px;
+    font-size: 25px;
+}
+
+#decreaseButton{
+    padding: 10px;
+    margin-left: 475px;
+    font-size: 15px;
+}

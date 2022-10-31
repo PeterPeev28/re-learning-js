@@ -471,24 +471,44 @@
 //         return total + element;
 // }
 
-// --------- sort an array of numbers #42 ---------
+// --------- sort an array of numbers #43 ---------
+// let grades = [6, 5, 2, 3, 4];
 
-let grades = [6, 5, 2, 3, 4];
+// grades = grades.sort(ascendingSort);
+// grades.forEach(print)
 
-grades = grades.sort(ascendingSort);
-grades.forEach(print)
+// function descendingSort(x, y){
+//         return y - x;
+// }
 
-function descendingSort(x, y){
-        return y - x;
+// function ascendingSort(x, y){
+//         return x - y;
+// }
+
+// function print(element){
+//         console.log(element);
+// }
+
+// --------- function expressions #44 ---------
+// anonymous fucntion
+// const greeting =  function(){
+//         console.log("Hello! :)");
+// }
+// greeting();
+
+let count = 0;
+document.getElementById("increaseButton").onclick = function(){
+        count++;
+        document.getElementById("myLabel").innerHTML = count;
 }
 
-function ascendingSort(x, y){
-        return x - y;
+document.getElementById("decreaseButton").onclick = function(){
+        count--;
+        document.getElementById("myLabel").innerHTML = count;
 }
 
-function print(element){
-        console.log(element);
-}
+// --------- arrow functions #45 ---------
+
 
 // --------- To be Continued ---------
 // 2:20:00 reached
