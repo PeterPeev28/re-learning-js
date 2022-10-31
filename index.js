@@ -496,18 +496,29 @@
 // }
 // greeting();
 
-let count = 0;
-document.getElementById("increaseButton").onclick = function(){
-        count++;
-        document.getElementById("myLabel").innerHTML = count;
-}
+// let count = 0;
+// document.getElementById("increaseButton").onclick = function(){
+//         count++;
+//         document.getElementById("myLabel").innerHTML = count;
+// }
 
-document.getElementById("decreaseButton").onclick = function(){
-        count--;
-        document.getElementById("myLabel").innerHTML = count;
-}
+// document.getElementById("decreaseButton").onclick = function(){
+//         count--;
+//         document.getElementById("myLabel").innerHTML = count;
+// }
 
 // --------- arrow functions #45 ---------
+const greeting = (username)=>{
+        console.log("Hello! :)", username);
+}
+greeting("Peter"); 
+
+const percent = (x, y) =>{
+        return x / y * 100;
+}
+console.log(percent(2224, 2340),"%");
+
+// --------- shuffle an array #46 ---------
 
 
 // --------- To be Continued ---------
