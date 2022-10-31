@@ -571,20 +571,36 @@
 // store.forEach((value, key) => console.log(`${key} $${value}`))
 
 // --------- objects #49 ---------
-const car = {
-        brand : "VW",
-        model : "Jetta mk2",
-        year : 1987,
+// const car = {
+//         brand : "VW",
+//         model : "Jetta mk2",
+//         year : 1987,
 
-        drive : function(){
-                console.log("You drive the car");
+//         drive : function(){
+//                 console.log("You drive the car");
+//         }
+// }
+
+// console.log(car.brand);
+// console.log(car.model);
+
+// --------- classes #51 ---------
+class Player{
+        score = 0;
+
+        pause(){
+                console.log("You paused the game.");
+        }
+        exit(){
+                console.log("You exited the game.");
         }
 }
 
-console.log(car.brand);
-console.log(car.model);
+const player1 = new Player();
+player1.score =  123;
+console.log(player1.score);
 
-// --------- classes #51 ---------
+// --------- constructors #52 ---------
 
 
 // --------- To be Continued ---------
