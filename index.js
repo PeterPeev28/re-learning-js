@@ -380,22 +380,39 @@
 // console.log(class1);
 
 // --------- rest parameters  #37 ---------
-let a = 1;
-let b = 2;
-let c = 3;
-let d = 4;
-let e = 5;
+// let a = 1;
+// let b = 2;
+// let c = 3;
+// let d = 4;
+// let e = 5;
 
-console.log(sum(a,b,c,d,e));
+// console.log(sum(a,b,c,d,e));
 
-function sum(...numbers){
-        let total = 0;
-        for(let number of numbers){
-                total += number;
-        }
-        return total;
+// function sum(...numbers){
+//         let total = 0;
+//         for(let number of numbers){
+//                 total += number;
+//         }
+//         return total;
+// }
+
+// --------- callbacks  #38 ---------
+let total = sum(2,3, displayDOM);
+// displayConsole(total);
+// displayDOM(total);
+
+function sum(x, y, callback){
+        let result = x + y;
+        callback(result);
 }
 
+function displayConsole(output){
+        console.log(output);
+}
+
+function displayDOM(output){
+        document.getElementById("myLabel").innerHTML = output;
+}
 
 // --------- To be Continued ---------
 // 2:20:00 reached
