@@ -415,19 +415,39 @@
 // }
 
 // --------- array forEach()  #39 ---------
-let students = ["bob", "ron", "peter", "angel", "lancia", "albert"];
-students.forEach(capitalize);
-students.forEach(print);
+// let students = ["bob", "ron", "peter", "angel", "lancia", "albert"];
+// students.forEach(capitalize);
+// students.forEach(print);
 
-function capitalize(element, index, array){
-        array[index] = element[0].toUpperCase() + element.substring(1);
-}
-function print(element){
-console.log(element);
-}
-console.log(students[0]);
+// function capitalize(element, index, array){
+//         array[index] = element[0].toUpperCase() + element.substring(1);
+// }
+// function print(element){
+// console.log(element);
+// }
+// console.log(students[0]);
 
 // --------- array map()  #40 ---------
+let numbers = [1, 2, 3, 4, 5];
+let squares = numbers.map(square);
+let cubes = numbers.map(cube);
+
+cubes.forEach(print);
+squares.forEach(print);
+
+function square(element){
+        return Math.pow(element, 2);
+}
+
+function cube(element){
+        return Math.pow(element, 3);
+}
+
+function print(element){
+        console.log(element);
+}
+
+// --------- array filter()  #41 ---------
 
 
 // --------- To be Continued ---------
