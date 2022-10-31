@@ -616,9 +616,14 @@
 // student1.study();
 // console.log(`Student ${student1.name}, aged ${student1.age}, has a ${student1.gpa}, GPA`);
 
-// --------- inheritance #54 ---------
+// --------- inheritance and super keyword #54 / # 55 ---------
 class Animal{
-        alive = true;
+       
+        constructor(name, age){
+             this.name = name;
+             this.age =  age;   
+        }
+
         eat(){
                 console.log(`This ${this.name} us eating`);
         }
@@ -626,42 +631,58 @@ class Animal{
                 console.log(`This ${this.name} us sleeping`);
         }
 }
+
 class Rabbit extends Animal{
-        name = "rabbit";
+
+        constructor(name, age, runSpeed){
+                super(name, age);
+                this.runSpeed = runSpeed;
+        }
+
         run(){
-                console.log(`This ${this.name} us running`);
+                console.log(`This ${this.name} us running at ${this.runSpeed} km/h`);
         }
 }
 
 class Fish extends Animal{
-        name = "fish";
+        
+        constructor(name, age, swimSpeed){
+                super(name, age);
+                this.swimSpeed = swimSpeed;
+        }
+
         swim(){
-                console.log(`This ${this.name} us swimming`);
+                console.log(`This ${this.name} us swimming at ${this.swimSpeed} km/h`);
         }
 }
 
 class Bird extends Animal{
-        name = "bird";
+        
+        constructor(name, age, flySpeed){
+                super(name, age);
+                this.flySpeed = flySpeed;
+        }
+
         fly(){
-                console.log(`This ${this.name} us flying`);
+                console.log(`This ${this.name} us flying at ${this.flySpeed} km/h`);
         }
 }
 
-const rabbit = new Rabbit();
-console.log(rabbit.alive);
-rabbit.sleep();
-rabbit.eat();
+const rabbit = new Rabbit("Bugs Bunny", 1, 30);
+// rabbit.sleep();
+// rabbit.eat();
+rabbit.run();
 
-const fish = new Fish();
+const fish = new Fish("Fish", 2, 25);
 fish.swim();
-fish.eat();
+// fish.eat();
 
-const bird = new Bird();
-bird.eat();
-bird.sleep();
+const bird = new Bird("Eagle", 3, 130);
+// bird.eat();
+// bird.sleep();
 bird.fly();
 
-
+// --------- inheritance #55 ---------
 
 
 
