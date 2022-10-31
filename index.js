@@ -508,17 +508,36 @@
 // }
 
 // --------- arrow functions #45 ---------
-const greeting = (username)=>{
-        console.log("Hello! :)", username);
-}
-greeting("Peter"); 
+// const greeting = (username)=>{
+//         console.log("Hello! :)", username);
+// }
+// greeting("Peter"); 
 
-const percent = (x, y) =>{
-        return x / y * 100;
-}
-console.log(percent(2224, 2340),"%");
+// const percent = (x, y) =>{
+//         return x / y * 100;
+// }
+// console.log(percent(2224, 2340),"%");
 
 // --------- shuffle an array #46 ---------
+let cards = ["Ace", "2", "3", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+
+shuffle(cards);
+console.log(cards);
+
+function shuffle(array){
+        let currentIndex = array.length;
+        while(currentIndex != 0){
+                let randomIndex = Math.floor(Math.random() * array.length);
+                currentIndex -=1;
+
+                let temp = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] =  temp;
+        }
+        return array;
+}
+
+// --------- nested functions #47 ---------
 
 
 // --------- To be Continued ---------
