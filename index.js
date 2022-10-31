@@ -617,74 +617,100 @@
 // console.log(`Student ${student1.name}, aged ${student1.age}, has a ${student1.gpa}, GPA`);
 
 // --------- inheritance and super keyword #54 / # 55 ---------
-class Animal{
+// class Animal{
        
-        constructor(name, age){
-             this.name = name;
-             this.age =  age;   
-        }
+//         constructor(name, age){
+//              this.name = name;
+//              this.age =  age;   
+//         }
 
-        eat(){
-                console.log(`This ${this.name} us eating`);
-        }
-        sleep(){
-                console.log(`This ${this.name} us sleeping`);
-        }
-}
+//         eat(){
+//                 console.log(`This ${this.name} us eating`);
+//         }
+//         sleep(){
+//                 console.log(`This ${this.name} us sleeping`);
+//         }
+// }
 
-class Rabbit extends Animal{
+// class Rabbit extends Animal{
 
-        constructor(name, age, runSpeed){
-                super(name, age);
-                this.runSpeed = runSpeed;
-        }
+//         constructor(name, age, runSpeed){
+//                 super(name, age);
+//                 this.runSpeed = runSpeed;
+//         }
 
-        run(){
-                console.log(`This ${this.name} us running at ${this.runSpeed} km/h`);
-        }
-}
+//         run(){
+//                 console.log(`This ${this.name} us running at ${this.runSpeed} km/h`);
+//         }
+// }
 
-class Fish extends Animal{
+// class Fish extends Animal{
         
-        constructor(name, age, swimSpeed){
-                super(name, age);
-                this.swimSpeed = swimSpeed;
-        }
+//         constructor(name, age, swimSpeed){
+//                 super(name, age);
+//                 this.swimSpeed = swimSpeed;
+//         }
 
-        swim(){
-                console.log(`This ${this.name} us swimming at ${this.swimSpeed} km/h`);
-        }
-}
+//         swim(){
+//                 console.log(`This ${this.name} us swimming at ${this.swimSpeed} km/h`);
+//         }
+// }
 
-class Bird extends Animal{
+// class Bird extends Animal{
         
-        constructor(name, age, flySpeed){
-                super(name, age);
-                this.flySpeed = flySpeed;
+//         constructor(name, age, flySpeed){
+//                 super(name, age);
+//                 this.flySpeed = flySpeed;
+//         }
+
+//         fly(){
+//                 console.log(`This ${this.name} us flying at ${this.flySpeed} km/h`);
+//         }
+// }
+
+// const rabbit = new Rabbit("Bugs Bunny", 1, 30);
+// // rabbit.sleep();
+// // rabbit.eat();
+// rabbit.run();
+
+// const fish = new Fish("Fish", 2, 25);
+// fish.swim();
+// // fish.eat();
+
+// const bird = new Bird("Eagle", 3, 130);
+// // bird.eat();
+// // bird.sleep();
+// bird.fly();
+
+// --------- getter/setter #56 ---------
+class Car{
+        constructor(power){
+                this._gas = 25;
+                this._power = power;
         }
 
-        fly(){
-                console.log(`This ${this.name} us flying at ${this.flySpeed} km/h`);
+        get power(){
+                return `${this._power} hp`;
+        }
+        get gas(){
+                return `${this._gas} L (${this._gas / 50 * 100}%)`;
+        }
+        set gas(value){
+                if(value > 50){
+                        value =  50;
+                }
+                else if(value < 0){
+                        value = 0;
+                }
+                this._gas = value;
         }
 }
 
-const rabbit = new Rabbit("Bugs Bunny", 1, 30);
-// rabbit.sleep();
-// rabbit.eat();
-rabbit.run();
-
-const fish = new Fish("Fish", 2, 25);
-fish.swim();
-// fish.eat();
-
-const bird = new Bird("Eagle", 3, 130);
-// bird.eat();
-// bird.sleep();
-bird.fly();
-
-// --------- inheritance #55 ---------
-
-
+let car = new Car(400);
+console.log(car.power);
+console.log(car.gas);
+car.gas = 50;
+console.log(car.gas);
 
 // --------- To be Continued ---------
 // 2:20:00 reached
