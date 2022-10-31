@@ -519,25 +519,72 @@
 // console.log(percent(2224, 2340),"%");
 
 // --------- shuffle an array #46 ---------
-let cards = ["Ace", "2", "3", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+// let cards = ["Ace", "2", "3", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+// shuffle(cards);
+// console.log(cards);
 
-shuffle(cards);
-console.log(cards);
+// function shuffle(array){
+//         let currentIndex = array.length;
+//         while(currentIndex != 0){
+//                 let randomIndex = Math.floor(Math.random() * array.length);
+//                 currentIndex -=1;
 
-function shuffle(array){
-        let currentIndex = array.length;
-        while(currentIndex != 0){
-                let randomIndex = Math.floor(Math.random() * array.length);
-                currentIndex -=1;
-
-                let temp = array[currentIndex];
-                array[currentIndex] = array[randomIndex];
-                array[randomIndex] =  temp;
-        }
-        return array;
-}
+//                 let temp = array[currentIndex];
+//                 array[currentIndex] = array[randomIndex];
+//                 array[randomIndex] =  temp;
+//         }
+//         return array;
+// }
 
 // --------- nested functions #47 ---------
+// let userName = "Peter";
+// let userInbox = 0;
+// login();
+
+// function login(){
+//        displayUserName();
+//        displayUserInbox();
+
+//         function displayUserName(){
+//                 console.log(`Welcome ${userName}`);
+//         }
+//         function displayUserInbox(){
+//                 console.log(`You have ${userInbox} new messages`);
+//         }
+// }
+
+// --------- maps #48 ---------
+// const store = new Map([
+//         ["t-shirt", 20],
+//         ["jeans", 30],
+//         ["socks", 10]
+// ]);
+// store.set("hat", 40);
+// console.log(store);
+
+// let shopingCart = 0;
+// shopingCart += store.get("t-shirt");
+// shopingCart += store.get("socks");
+// console.log(shopingCart)
+// console.log(store.has("socks"));
+
+// store.forEach((value, key) => console.log(`${key} $${value}`))
+
+// --------- objects #49 ---------
+const car = {
+        brand : "VW",
+        model : "Jetta mk2",
+        year : 1987,
+
+        drive : function(){
+                console.log("You drive the car");
+        }
+}
+
+console.log(car.brand);
+console.log(car.model);
+
+// --------- classes #51 ---------
 
 
 // --------- To be Continued ---------
