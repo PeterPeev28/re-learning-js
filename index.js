@@ -397,22 +397,38 @@
 // }
 
 // --------- callbacks  #38 ---------
-let total = sum(2,3, displayDOM);
-// displayConsole(total);
-// displayDOM(total);
+// let total = sum(2,3, displayDOM);
+// // displayConsole(total);
+// // displayDOM(total);
 
-function sum(x, y, callback){
-        let result = x + y;
-        callback(result);
-}
+// function sum(x, y, callback){
+//         let result = x + y;
+//         callback(result);
+// }
 
-function displayConsole(output){
-        console.log(output);
-}
+// function displayConsole(output){
+//         console.log(output);
+// }
 
-function displayDOM(output){
-        document.getElementById("myLabel").innerHTML = output;
+// function displayDOM(output){
+//         document.getElementById("myLabel").innerHTML = output;
+// }
+
+// --------- array forEach()  #39 ---------
+let students = ["bob", "ron", "peter", "angel", "lancia", "albert"];
+students.forEach(capitalize);
+students.forEach(print);
+
+function capitalize(element, index, array){
+        array[index] = element[0].toUpperCase() + element.substring(1);
 }
+function print(element){
+console.log(element);
+}
+console.log(students[0]);
+
+// --------- array map()  #40 ---------
+
 
 // --------- To be Continued ---------
 // 2:20:00 reached
