@@ -428,27 +428,40 @@
 // console.log(students[0]);
 
 // --------- array map()  #40 ---------
-let numbers = [1, 2, 3, 4, 5];
-let squares = numbers.map(square);
-let cubes = numbers.map(cube);
+// let numbers = [1, 2, 3, 4, 5];
+// let squares = numbers.map(square);
+// let cubes = numbers.map(cube);
 
-cubes.forEach(print);
-squares.forEach(print);
+// cubes.forEach(print);
+// squares.forEach(print);
 
-function square(element){
-        return Math.pow(element, 2);
+// function square(element){
+//         return Math.pow(element, 2);
+// }
+
+// function cube(element){
+//         return Math.pow(element, 3);
+// }
+
+// function print(element){
+//         console.log(element);
+// }
+
+// --------- array filter()  #41 ---------
+let ages = [18, 16, 21, 17, 19, 90];
+let adults = ages.filter(checkAge);
+
+adults.forEach(print);
+
+function checkAge(element){
+        return element >= 18;
 }
 
-function cube(element){
-        return Math.pow(element, 3);
-}
-
-function print(element){
+function printElement(element){
         console.log(element);
 }
 
-// --------- array filter()  #41 ---------
-
+// --------- array reduce()  #42 ---------
 
 // --------- To be Continued ---------
 // 2:20:00 reached
