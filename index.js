@@ -600,23 +600,69 @@
 // console.log(player1.score);
 
 // --------- constructors #52 ---------
-class Student{
+// class Student{
 
-        constructor(name, age, gpa){
-                this.name = name;
-                this.age = age;
-                this.gpa = gpa;
+//         constructor(name, age, gpa){
+//                 this.name = name;
+//                 this.age = age;
+//                 this.gpa = gpa;
+//         }
+//         study(){
+//                 console.log(`${this.name} is stuDying.`);
+//         }
+// }
+
+// let student1 = new Student("Spongebob", 21, 3.6);
+// student1.study();
+// console.log(`Student ${student1.name}, aged ${student1.age}, has a ${student1.gpa}, GPA`);
+
+// --------- inheritance #54 ---------
+class Animal{
+        alive = true;
+        eat(){
+                console.log(`This ${this.name} us eating`);
         }
-        study(){
-                console.log(`${this.name} is stuDying.`);
+        sleep(){
+                console.log(`This ${this.name} us sleeping`);
+        }
+}
+class Rabbit extends Animal{
+        name = "rabbit";
+        run(){
+                console.log(`This ${this.name} us running`);
         }
 }
 
-let student1 = new Student("Spongebob", 21, 3.6);
-student1.study();
-console.log(`Student ${student1.name}, aged ${student1.age}, has a ${student1.gpa}, GPA`);
+class Fish extends Animal{
+        name = "fish";
+        swim(){
+                console.log(`This ${this.name} us swimming`);
+        }
+}
 
-// --------- static keyword #53 ---------
+class Bird extends Animal{
+        name = "bird";
+        fly(){
+                console.log(`This ${this.name} us flying`);
+        }
+}
+
+const rabbit = new Rabbit();
+console.log(rabbit.alive);
+rabbit.sleep();
+rabbit.eat();
+
+const fish = new Fish();
+fish.swim();
+fish.eat();
+
+const bird = new Bird();
+bird.eat();
+bird.sleep();
+bird.fly();
+
+
+
 
 
 // --------- To be Continued ---------
