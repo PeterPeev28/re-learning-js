@@ -448,20 +448,47 @@
 // }
 
 // --------- array filter()  #41 ---------
-let ages = [18, 16, 21, 17, 19, 90];
-let adults = ages.filter(checkAge);
+// let ages = [18, 16, 21, 17, 19, 90];
+// let adults = ages.filter(checkAge);
 
-adults.forEach(print);
+// adults.forEach(print);
 
-function checkAge(element){
-        return element >= 18;
-}
+// function checkAge(element){
+//         return element >= 18;
+// }
 
-function printElement(element){
-        console.log(element);
-}
+// function printElement(element){
+//         console.log(element);
+// }
 
 // --------- array reduce()  #42 ---------
+// let prices = [5, 10, 15, 20, 25];
+// let total = prices.reduce(chechOut);
+
+// console.log(`The total is: $${total}`);
+
+// function chechOut(total, element){
+//         return total + element;
+// }
+
+// --------- sort an array of numbers #42 ---------
+
+let grades = [6, 5, 2, 3, 4];
+
+grades = grades.sort(ascendingSort);
+grades.forEach(print)
+
+function descendingSort(x, y){
+        return y - x;
+}
+
+function ascendingSort(x, y){
+        return x - y;
+}
+
+function print(element){
+        console.log(element);
+}
 
 // --------- To be Continued ---------
 // 2:20:00 reached
