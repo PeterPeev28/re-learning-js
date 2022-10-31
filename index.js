@@ -585,22 +585,38 @@
 // console.log(car.model);
 
 // --------- classes #51 ---------
-class Player{
-        score = 0;
+// class Player{
+//         score = 0;
+//         pause(){
+//                 console.log("You paused the game.");
+//         }
+//         exit(){
+//                 console.log("You exited the game.");
+//         }
+// }
 
-        pause(){
-                console.log("You paused the game.");
+// const player1 = new Player();
+// player1.score =  123;
+// console.log(player1.score);
+
+// --------- constructors #52 ---------
+class Student{
+
+        constructor(name, age, gpa){
+                this.name = name;
+                this.age = age;
+                this.gpa = gpa;
         }
-        exit(){
-                console.log("You exited the game.");
+        study(){
+                console.log(`${this.name} is stuDying.`);
         }
 }
 
-const player1 = new Player();
-player1.score =  123;
-console.log(player1.score);
+let student1 = new Student("Spongebob", 21, 3.6);
+student1.study();
+console.log(`Student ${student1.name}, aged ${student1.age}, has a ${student1.gpa}, GPA`);
 
-// --------- constructors #52 ---------
+// --------- static keyword #53 ---------
 
 
 // --------- To be Continued ---------
