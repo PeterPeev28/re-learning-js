@@ -759,27 +759,139 @@
 // console.log(...cards);
 
 // --------- error handling #60 ---------
-try{
-        let x = window.prompt("Enter a number");
-        x = Number(x);
+// try{
+//         let x = window.prompt("Enter a number");
+//         x = Number(x);
 
-        if(NaN(x)) throw "That wasn't a number";
-        if(x == "") throw "That was empy";
+//         if(NaN(x)) throw "That wasn't a number";
+//         if(x == "") throw "That was empy";
 
-        console.log(`${x} is a number`);
-}
-catch(error){
-      console.log(error);  
-}
-finally{
-        console.log("This always executes");
-}
+//         console.log(`${x} is a number`);
+// }
+// catch(error){
+//       console.log(error);  
+// }
+// finally{
+//         console.log("This always executes");
+// }
 
 // --------- setTimeout() #60 ---------
+// let item = "crypto-something";
+// let price = 420.69;
 
+// let timer1 = setTimeout(firstMessage, 3000, item, price);
+// let timer2 = setTimeout(secondMessage, 6000);
+// let timer3 = setTimeout(thirdMessage, 9000);
 
+// function firstMessage(item, price){
+//         alert(`Buy my ${item} course for only ${price}$`);
+// }
+// function secondMessage(){
+//         alert("This is totaly not a scam");
+// }
+// function thirdMessage(){
+//         alert("DO IT! :3");
+// }
 
+// document.getElementById("myButton").onclick = function(){
+//         clearTimeout(timer1);
+//         clearTimeout(timer2);
+//         clearTimeout(timer3);
+//         alert("DO IT! :3")
+// }
 
+// --------- setInterval() #61 ---------
+// let count = 0;
+// let max = window.prompt("Count up to what number?");
+// man = Number(max);
+
+// const myTimer = setInterval(countUp, 1000);
+
+// function countUp(){
+//         count++;
+//         console.log(count);
+//         if(count >= max){
+//                 clearInterval(myTimer);
+//         }
+// }
+
+// --------- date Objects #63 ---------
+// let date = new Date(1998, 6, 28, 5, 30, 20, 5);
+
+// date = date.toLocaleString();
+// document.getElementById("myLabel").innerHTML = date;
+// console.log(date);
+
+// --------- clock program #64 ---------
+// const myLabel = document.getElementById("myLabel");
+// update();
+// setInterval(update, 1000);
+
+// function update(){
+//         let date = new Date();
+//         myLabel.innerHTML = formatTime(date);
+
+//         function formatTime(date){
+//                 let hours = date.getHours();
+//                 let minutes = date.getMinutes();
+//                 let seconds = date.getSeconds();
+
+//                 return `${hours}:${minutes}:${seconds}`
+//         }
+// }
+
+// --------- console.time #66 ---------
+//used to track hold long a SYNCRONOUS method takes
+//start
+// console.time("Responce time");
+// alert("click the ok button");
+//end
+// console.timeEnd("Responce time");
+
+// --------- promises #67 ---------
+// const promise = new Promise((resolve, reject)=> {
+//         let fileLoaded = false;
+//         if(fileLoaded){
+//                 resolve("File loaded");
+//         } else{
+//                 reject("File not loaded");
+//         }
+// });
+// promise.then(value  => console.log(value))
+//         .catch(error => console.log(error));
+
+// const wait = time => new Promise(resolve => {
+//         setTimeout(resolve, time);
+// });
+// wait(3000).then(()=> console.log("Thanks for waiting"));
+
+// --------- async / await #68 / #69 :D ---------
+// async function loadFile(){
+//         let fileLoaded = true;
+
+//         if(fileLoaded){
+//                 return Promise.resolve("File loaded");
+//         }else{
+//                 throw Promise.reject("File NOT loaded");
+//         }
+// }
+
+// async function startProcess(){
+//        try{
+//         let message =  await loadFile();
+//         console.log(message);
+//        } 
+//        catch(error){
+//         console.log(error);
+//        }
+// }
+//new way
+//startProcess();
+//old way
+// loadFile().then(value => console.log(value))
+//           .catch(error => console.log(error));
+
+// --------- ES6 module #70 :D ---------
 
 
 
