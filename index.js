@@ -713,54 +713,58 @@
 // console.log(car.gas);
 
 // --------- objects as arguments / array of objects #57 / #58 ---------
-class Car{
-        constructor(model, year, color){
-                this.model = model;
-                this.year = year;
-                this.color = color;
-        }
-        drive(){
-                console.log(`You drive the ${this.model}`);
-        }
-} // end of class
+// class Car{
+//         constructor(model, year, color){
+//                 this.model = model;
+//                 this.year = year;
+//                 this.color = color;
+//         }
+//         drive(){
+//                 console.log(`You drive the ${this.model}`);
+//         }
+// } // end of class
 
-const car1 = new Car("VW", 1987, "grey");
-const car2 = new Car("Mercedes", 1995, "black");
-const car3 = new Car("Lada", 1977, "red");
-const car4 = new Car("Audi", 2022, "purple");
-const cars = [car1, car2, car3, car4];
+// const car1 = new Car("VW", 1987, "grey");
+// const car2 = new Car("Mercedes", 1995, "black");
+// const car3 = new Car("Lada", 1977, "red");
+// const car4 = new Car("Audi", 2022, "purple");
+// const cars = [car1, car2, car3, car4];
 
-console.log(cars[0]);
-// cars[0].drive();
-startRace(cars);
+// console.log(cars[0]);
+// // cars[0].drive();
+// startRace(cars);
 
-function startRace(cars){
-        for (let car of cars){
-                car.drive();
+// function startRace(cars){
+//         for (let car of cars){
+//                 car.drive();
+//         }
+// }
+
+// --------- anonymous objects #59 ---------
+class Card{
+        constructor(value, suit){
+                this.value = value;
+                this.suit = suit;
         }
 }
 
-// --------- anonymous objects #59 ---------
+let cards = [
+        new Card("A", "Hearts"),
+        new Card("A", "Spades"),
+        new Card("A", "Diamonds"),
+        new Card("A", "Clubs")
+];
+
+cards.forEach(card=>console.log(`${card.value} ${card.suit}`));
+console.log(...cards);
 
 
-// displayInfo(car1);
-// changeColor(car1, "white");
-// displayInfo(car1);
+// --------- error handling #60 ---------
 
-// function displayInfo(car){
-//         console.log(car.model);
-//         console.log(car.year);
-//         console.log(car.color);
-// }
 
-// function changeColor(car, color){
-//         car.color = color;
-// }
-
-// --------- array of objects #58 ---------
 
 // --------- To be Continued ---------
-// 2:20:00 reached
+// <<<<=========== 3:56:00 reached ===========>>>>
 // TODO: rewatch and practice 
 
 
