@@ -900,20 +900,27 @@
 // let area = getArea(10);
 // console.log("area is:", area);
 
-// --------- ES6 module #70 :D ---------
-let element = document.getElementById("myTitle");
-element.style.backgroundColor="lightgreen";
+// --------- elemet selectors #72  ---------
+// let element = document.getElementById("myTitle");
+// element.style.backgroundColor="lightgreen";
 
-let vegetables = document.getElementsByTagName("li");
-vegetables[0].style.backgroundColor = "lightgreen";
+// let vegetables = document.getElementsByTagName("li");
+// vegetables[0].style.backgroundColor = "lightgreen";
 
-let desserts = document.getElementsByClassName("desserts");
-console.log(desserts);
+// let desserts = document.getElementsByClassName("desserts");
+// console.log(desserts);
+
+// --------- DOM traversal #73  ---------
+let element = document.body;
+let child = element.firstElementChild;
+child.style.backgroundColor = "lightgreen";
+
+
 
 
 
 // --------- To be Continued ---------
-// <<<<=========== 3:56:00 reached ===========>>>>
+// <<<<=========== 5:05:30 reached ===========>>>>
 // TODO: rewatch and practice 
 
 
