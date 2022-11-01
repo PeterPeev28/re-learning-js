@@ -741,25 +741,46 @@
 // }
 
 // --------- anonymous objects #59 ---------
-class Card{
-        constructor(value, suit){
-                this.value = value;
-                this.suit = suit;
-        }
-}
+// class Card{
+//         constructor(value, suit){
+//                 this.value = value;
+//                 this.suit = suit;
+//         }
+// }
 
-let cards = [
-        new Card("A", "Hearts"),
-        new Card("A", "Spades"),
-        new Card("A", "Diamonds"),
-        new Card("A", "Clubs")
-];
+// let cards = [
+//         new Card("A", "Hearts"),
+//         new Card("A", "Spades"),
+//         new Card("A", "Diamonds"),
+//         new Card("A", "Clubs")
+// ];
 
-cards.forEach(card=>console.log(`${card.value} ${card.suit}`));
-console.log(...cards);
-
+// cards.forEach(card=>console.log(`${card.value} ${card.suit}`));
+// console.log(...cards);
 
 // --------- error handling #60 ---------
+try{
+        let x = window.prompt("Enter a number");
+        x = Number(x);
+
+        if(NaN(x)) throw "That wasn't a number";
+        if(x == "") throw "That was empy";
+
+        console.log(`${x} is a number`);
+}
+catch(error){
+      console.log(error);  
+}
+finally{
+        console.log("This always executes");
+}
+
+// --------- setTimeout() #60 ---------
+
+
+
+
+
 
 
 
