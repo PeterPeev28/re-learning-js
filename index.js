@@ -891,8 +891,24 @@
 // loadFile().then(value => console.log(value))
 //           .catch(error => console.log(error));
 
-// --------- ES6 module #70 :D ---------
+// --------- ES6 module #70 ---------
+// import {PI, getCircumference, getArea} from "./math_util.js"
+// console.log(PI);
+// let circumference = getCircumference(10);
+// console.log("circumference is:", circumference);
 
+// let area = getArea(10);
+// console.log("area is:", area);
+
+// --------- ES6 module #70 :D ---------
+let element = document.getElementById("myTitle");
+element.style.backgroundColor="lightgreen";
+
+let vegetables = document.getElementsByTagName("li");
+vegetables[0].style.backgroundColor = "lightgreen";
+
+let desserts = document.getElementsByClassName("desserts");
+console.log(desserts);
 
 
 
